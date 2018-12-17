@@ -9,6 +9,7 @@
     var socket = io(); 
     //socket.on('message', (data) => document.write(data));
     socket.on('EmitMessage', (da) => document.write(da.emitExample));
+    socket.emit('clientEmit', 'Data From client side');
   </script>
   <title>Hello World</title>
 </head>
